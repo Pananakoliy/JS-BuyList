@@ -1,9 +1,271 @@
-h1 {
-    color: red;
+.bl-background {
+    font-size: 14px;  
+    background: #cdcbcb;
+    padding: 20px;
+    display: flex;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
-	background-color: yellow;
+.bl-title{
+padding: 10px !important;
+}
+
+.bl-list * {
+    display: flex;
+}
+
+.bl-list {
+    
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    width: 60%;
+    min-width: 500px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+
+.bl-bought {
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    min-width: 20%;
+    background: white;
+    margin-left: 30px;
+    width: 30%;
+}
+
+
+.bl-label-hidden{
+    
+    display: none;
+}
+
+.bl-product{
+
+    min-width: 120px;
+    padding: 1.4em 0em 0.5em 10px; 
+    width: 30%; 
+}
+
+.bl-count{
+    width: 50%;
+    padding: 1.4em 0em 0.5em ; 
+}
+
+.bl-buttons{
+    float: right;
+    min-width: 200px;
+    text-align: right !important;
+    width: 30%;
+}
+
+.productName{
+    text-decoration: none; 
+}
+
+.bl-row {
+    border-top: lightgray 1px solid;
+    padding: 5px;
+}
+
+.bl-row-hidden {
+    display: none;
+}
+
+.input-string{
+    
+    width: 80%;
+    border-radius: 0.2em 0em 0em 0.2em;
+    border: 1px solid rgba(34,36,38,.15);
+    border-right: 0;
+}
+
+
+
+.bl-orange-label-bought{
+    text-decoration:line-through;
+    display: none;
+}
+
+
+.bl-orange-label {
+
+    font-size: 0.64285714rem;
+    background: #f2711c;
+    color: #fff;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.7;
+
+    
+}
+
+.bl-label, .bl-label-hidden, .bl-label-hidden2 {
+    
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+    background-color: #e9e9e9;
+    padding: .5833em .833em;
+    color: rgba(0,0,0,.6);
+    text-transform: none;
+    font-weight: 700;
+    border: 0 solid transparent;
+    border-radius: .28571429rem;
+    height: 34%;
+    margin: 2px 0px;
+    font-size: 0.8em;
+}
+
+.bl-label{
+    margin-right: 2px; 
+}
+
+.bl-label-hidden2{
+    display: none;
+}
+
+.bl-label-bought{
+    text-decoration:line-through;
+    display: none;
+}
+
+.bl-label-hidden{
+    display: none;
+}
+
+
+.buy-list{
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    background-color: #770555;
+    color: white;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.buy-list:hover{
+    background-color: blue;
+    height: 60px;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    font-size: 0.8rem;
+    font-weight: 800;
+    visibility: hidden;
+    width: 180px;
+    height: 0 !important;
+    background-color: rgb(143, 0, 119);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: all 1s;
+    
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    height: 1.1em !important;
+  }
+
+  .cancel-button{
+      display: none;
+  }
+
+/*Кнопки*/
+
+.bl-but{
+
+}
+.bl-plus {
+    background: #04a613;
+}
+
+.bl-minus {
+    background: red;
+    color: white;
+    opacity: 0.3;
+}
+
+.round-button {
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+    margin: 0 .5em;
+    border-radius: 100%;
+    border: 0;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rect-button{
+    opacity: 1 !important;
+    margin: 5%;
+    border: 1px;
+    padding: 0.5em .75em;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+    border-radius: 0.4em;
+}
+
+.input-button{  
+    padding-left: 1.5%;
+    flex: 0 0 auto ;
+    text-align: center;
+    font-size: 100%;
+    width: 20%;
+    background-color: #2185D0;
+    color: white;
+    border: 0;
+    border-radius: 0em 0.2em 0.2em 0em;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+
+@media (max-width: 500px){
+    .bl-background{
+        display: block;
+    }
+    .bl-list{
+        min-width: 400px;
+        width: 100%;
+    }
+    .bl-bought{
+        margin: 0;
+        min-width: 400px;
+        width: 100%;
+    }
+}
+
+@media print {
+    .buy-list{
+        background-color: white;
+        color: black;
+        border: 1px solid #770555;
+    }
 }
