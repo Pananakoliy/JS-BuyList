@@ -3,14 +3,130 @@
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="scripts.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
-<body>
-<h1>Hello World</h1>
-<h2>Keeeeek</h2>
-<p>Hello Git</p>
-<div class="text2018">Hi 2018!!!</div>
+<body style="background-color: #cdcbcb; font-family: Arial, Helvetica, sans-serif ">
+<div class="bl-background">
+    <div class="bl-list">   
+        <div class="bl-row" style="border-top: 0 ;padding: 10px;
+        min-height: 30px">
+            <input 
+        
+            class="input-string"
+            type="text"
+            placeholder="Назва товару"
+            
+            >
+            <button class="input-button tooltip" >
+                Додати <span class="tooltiptext">Додати вказаний товар</span>
+            </button>
+        </div>
+        <div class="bl-row">
+            <div class="bl-product">
+                    <span class="productName">Помідори</span>
+            </div>
+            <div class="bl-count">
+                        <button class="round-button bl-minus minus tooltip">-<span class="tooltiptext">Відняти одиницю товару</span></button>
+                        <span class="bl-label" style="margin: 0">1</span>
+                        <button class="round-button bl-plus tooltip">+<span class="tooltiptext">Додати одиницю товару</span></button>
+            </div>
+            <div class="bl-buttons bl-but">
+                    <button class="rect-button tooltip buy">Купити<span class="tooltiptext">Відмітити як куплений</span></button> 
+                    <button class="rect-button bl-minus tooltip x-button">x<span class="tooltiptext">Виключити товар </span></button>
+                </div>
+                
+                        <div class="bl-buttons cancel-button">
+                                <button class="rect-button tooltip cancel-button">Відмінити покупку<span class="tooltiptext">Відмінити покупку</span></button>
+                        </div>
+        </div>
+
+        <div class="bl-row">
+        
+                <div class="bl-product">
+                    <span class="productName">Печиво</span>
+                </div>
+                <div class="bl-count">
+                    <button class="round-button bl-minus minus tooltip">-<span class="tooltiptext">Відняти одиницю товару</span></button>
+                        <span class="bl-label" style="margin: 0">1</span>
+                        <button class="round-button bl-plus tooltip">+<span class="tooltiptext">Додати одиницю товару</span></button>
+                </div>
+                <div class="bl-buttons bl-but">
+                    <button class="rect-button tooltip buy">Купити<span class="tooltiptext">Відмітити як куплений</span></button> 
+                    <button class="rect-button bl-minus tooltip x-button">x<span class="tooltiptext">Виключити товар </span></button>
+                </div>
+                
+                <div class="bl-buttons cancel-button">
+                    <button class="rect-button tooltip cancel-button">Відмінити покупку<span class="tooltiptext">Відмінити покупку</span></button>
+                </div>
+                
+                 </div>
+
+            <div class="bl-row">
+        
+                    <div class="bl-product">
+                            <span class="productName">Сир</span>
+                    </div>
+                    <div class="bl-count">
+                        <button class="round-button bl-minus minus tooltip">-<span class="tooltiptext">Відняти одиницю товару</span></button>
+                        <span class="bl-label" style="margin: 0">1</span>
+                        <button class="round-button bl-plus tooltip ">+<span class="tooltiptext">Додати одиницю товару</span></button>
+                    </div>
+                    <div class="bl-buttons bl-but">
+                            <button class="rect-button tooltip buy">Купити<span class="tooltiptext">Відмітити як куплений</span></button> 
+                            <button class="rect-button bl-minus tooltip x-button">x<span class="tooltiptext">Виключити товар </span></button>
+                        </div>
+                        
+                                <div class="bl-buttons  cancel-button">
+                                        <button class="rect-button tooltip cancel-button">Відмінити покупку<span class="tooltiptext">Відмінити покупку</span></button>
+                                </div>
+                </div>
+
+                <div class="bl-row-hidden">
+        
+                        <div class="bl-product">
+                            <span class="productName">Печиво</span>
+                        </div>
+                        <div class="bl-count">
+                            <button class="round-button bl-minus minus tooltip">-<span class="tooltiptext">Відняти одиницю товару</span></button>
+                                <span class="bl-label" style="margin: 0">1</span>
+                                <button class="round-button bl-plus tooltip">+<span class="tooltiptext">Додати одиницю товару</span></button>
+                        </div>
+                        <div class="bl-buttons bl-but">
+                                <button class="rect-button tooltip buy">Купити<span class="tooltiptext">Відмітити як куплений</span></button> 
+                                <button class="rect-button bl-minus tooltip x-button">x<span class="tooltiptext">Виключити товар </span></button>
+                            </div>
+                            
+                                    <div class="cancel-button">
+                                            <button class="rect-button tooltip cancel-button">Відмінити покупку<span class="tooltiptext">Відмінити покупку</span></button>
+                                    </div>
+                    </div>
+
+    </div>
+
+    <div class="bl-bought ">
+        <div class="bl-title bl-row" style="border-top: 0"><b>Залишилося</b></div>
+        <div class="bl-row needToBuy ">
+            <span class="bl-label"><span class="prod">Помідори</span> <span class="bl-orange-label" id="Помідори">1</span> </span>
+            <span class="bl-label"><span class="prod">Печиво</span> <span class="bl-orange-label" id="Печиво">1</span> </span>
+            <span class="bl-label"><span class="prod">Сир</span> <span class="bl-orange-label" id="Сир">1</span> </span>
+            <span class="bl-label-hidden"><span class="prod">Сир</span> <span class="bl-orange-label">1</span></span>
+        </div>
+        <div class="bl-title bl-row" ><b>Куплено</b></div>
+            <div class="bl-title bl-row boughtStuff">
+                    <span class="bl-label bl-label-bought"><span class="prod">Помідори</span> <span class="bl-orange-label bl-orange-label-bought" id="Помідори2">1</span> </span>
+                    <span class="bl-label bl-label-bought"><span class="prod">Печиво</span> <span class="bl-orange-label bl-orange-label-bought" id="Печиво2">1</span> </span>
+                    <span class="bl-label bl-label-bought"><span class="prod">Сир</span> <span class="bl-orange-label bl-orange-label-bought" id="Сир2">1</span> </span>
+                    <span class="bl-label-hidden2 bl-label-bought"><span class="prod">Сир</span> <span class="bl-orange-label bl-orange-label-bought">1</span></span>
+            </div>
+    </div>
+</div>
+
+<div class="buy-list">
+Buy-List <br>
+Made by me
+</div>
+
 </body>
 </html>
